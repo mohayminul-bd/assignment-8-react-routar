@@ -1,0 +1,182 @@
+[
+  {
+    "id": 1,
+    "name": "Dr. Ayesha Rahman",
+    "image": "https://images.pexels.com/photos/5327585/pexels-photo-5327585.jpeg",
+    "education": [
+      {
+        "degree": "MBBS FCPS (Medicine)",
+        "institute": "Dhaka Medical College",
+        "year": "2009"
+      }
+    ],
+    "speciality": "Internal Medicine",
+    "experience": "14 years",
+    "registration_number": "BMDC Reg No: A-12345"
+  },
+  {
+    "id": 2,
+    "name": "Dr. Saiful Islam",
+    "image": "https://images.pexels.com/photos/8460159/pexels-photo-8460159.jpeg",
+    "education": [
+      {
+        "degree": "MBBS MS (Surgery)",
+        "institute": "Chittagong Medical College",
+        "year": "2010"
+      }
+    ],
+    "speciality": "General Surgery",
+    "experience": "13 years",
+    "registration_number": "BMDC Reg No: B-23456"
+  },
+  {
+    "id": 3,
+    "name": "Dr. Nusrat Jahan",
+    "image": "https://images.pexels.com/photos/6749771/pexels-photo-6749771.jpeg",
+    "education": [
+      {
+        "degree": "MBBS MD (Pediatrics)",
+        "institute": "Rajshahi Medical College",
+        "year": "2011"
+      }
+    ],
+    "speciality": "Pediatrics",
+    "experience": "12 years",
+    "registration_number": "BMDC Reg No: C-34567"
+  },
+  {
+    "id": 4,
+    "name": "Dr. Farzana Haque",
+    "image": "https://images.pexels.com/photos/8376199/pexels-photo-8376199.jpeg",
+    "education": [
+      {
+        "degree": "MBBS FCPS (Gynecology)",
+        "institute": "Sylhet MAG Osmani Medical College",
+        "year": "2008"
+      }
+    ],
+    "speciality": "Gynecology",
+    "experience": "15 years",
+    "registration_number": "BMDC Reg No: D-45678"
+  },
+  {
+    "id": 5,
+    "name": "Dr. Tanvir Ahmed",
+    "image": "https://images.pexels.com/photos/8460180/pexels-photo-8460180.jpeg",
+    "education": [
+      {
+        "degree": "MBBS MD (Cardiology)",
+        "institute": "Dhaka Medical College",
+        "year": "2007"
+      }
+    ],
+    "speciality": "Cardiology",
+    "experience": "16 years",
+    "registration_number": "BMDC Reg No: E-56789"
+  },
+  {
+    "id": 6,
+    "name": "Dr. Shaila Sultana",
+    "image": "https://images.pexels.com/photos/6749772/pexels-photo-6749772.jpeg",
+    "education": [
+      {
+        "degree": "MBBS FCPS (Dermatology)",
+        "institute": "Comilla Medical College",
+        "year": "2012"
+      }
+    ],
+    "speciality": "Dermatology",
+    "experience": "11 years",
+    "registration_number": "BMDC Reg No: F-67890"
+  },
+  {
+    "id": 7,
+    "name": "Dr. Imran Hossain",
+    "image": "https://images.pexels.com/photos/5452294/pexels-photo-5452294.jpeg",
+    "education": [
+      {
+        "degree": "MBBS MD (Neurology)",
+        "institute": "Rangpur Medical College",
+        "year": "2009"
+      }
+    ],
+    "speciality": "Neurology",
+    "experience": "14 years",
+    "registration_number": "BMDC Reg No: G-78901"
+  },
+  {
+    "id": 8,
+    "name": "Dr. Lubna Akter",
+    "image": "https://images.pexels.com/photos/8460159/pexels-photo-8460159.jpeg",
+    "education": [
+      {
+        "degree": "MBBS MD (Nephrology)",
+        "institute": "Barisal Medical College",
+        "year": "2013"
+      }
+    ],
+    "speciality": "Nephrology",
+    "experience": "10 years",
+    "registration_number": "BMDC Reg No: H-89012"
+  },
+  {
+    "id": 9,
+    "name": "Dr. Mahmudul Hasan",
+    "image": "https://images.pexels.com/photos/8376212/pexels-photo-8376212.jpeg",
+    "education": [
+      {
+        "degree": "MBBS FCPS (ENT)",
+        "institute": "Mymensingh Medical College",
+        "year": "2011"
+      }
+    ],
+    "speciality": "ENT",
+    "experience": "12 years",
+    "registration_number": "BMDC Reg No: I-90123"
+  },
+  {
+    "id": 10,
+    "name": "Dr. Rafiq Alam",
+    "image": "https://images.pexels.com/photos/8376195/pexels-photo-8376195.jpeg",
+    "education": [
+      {
+        "degree": "MBBS FCPS (Orthopedics)",
+        "institute": "Khulna Medical College",
+        "year": "2010"
+      }
+    ],
+    "speciality": "Orthopedic Surgery",
+    "experience": "13 years",
+    "registration_number": "BMDC Reg No: J-01234"
+  },
+  {
+    "id": 11,
+    "name": "Dr. Tania Mahmud",
+    "image": "https://images.pexels.com/photos/5452299/pexels-photo-5452299.jpeg",
+    "education": [
+      {
+        "degree": "MBBS MD (Psychiatry)",
+        "institute": "Green Life Medical College",
+        "year": "2014"
+      }
+    ],
+    "speciality": "Psychiatry",
+    "experience": "9 years",
+    "registration_number": "BMDC Reg No: K-12340"
+  },
+  {
+    "id": 12,
+    "name": "Dr. Hasan Zaman",
+    "image": "https://images.pexels.com/photos/8376196/pexels-photo-8376196.jpeg",
+    "education": [
+      {
+        "degree": "MBBS MD (Oncology)",
+        "institute": "Eastern Medical College",
+        "year": "2011"
+      }
+    ],
+    "speciality": "Oncology",
+    "experience": "12 years",
+    "registration_number": "BMDC Reg No: L-23456"
+  }
+]
