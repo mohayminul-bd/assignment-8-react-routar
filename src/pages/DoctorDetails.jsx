@@ -2,6 +2,8 @@ import React from "react";
 import { useLoaderData, useParams } from "react-router";
 import { PiTrademarkRegistered } from "react-icons/pi";
 import { HiOutlineExclamationCircle } from "react-icons/hi2";
+import Button from "../ui/Button";
+import { addBooking } from "../utils/Doctor";
 const DoctorDetails = () => {
   const data = useLoaderData();
   const { id } = useParams();
@@ -15,6 +17,11 @@ const DoctorDetails = () => {
     availability,
     registration_number,
   } = singleDoctor || {};
+
+  const handleBooking = () => {
+    addBooking(singleDoctor);
+  };
+
   return (
     <div className="pt-6 gap-7">
       <div className="md:px-30 p-5 md:py-10 bg-white rounded-2xl text-center">
@@ -46,9 +53,9 @@ const DoctorDetails = () => {
             availability: <span className="text-gray-500">{availability}</span>
           </p>
           <p>
-            <span className="font-bold">consultation_fee:</span>
+            <span className="font-bold">consultation_fee: </span>
             <span className="text-blue-600">
-              {consultation_fee} Per consultation
+              Taka: {consultation_fee} Per consultation
             </span>
           </p>
         </div>
@@ -73,9 +80,14 @@ const DoctorDetails = () => {
           </span>
         </p>
         <div className="px-15">
-          <button class="btn w-full rounded-full  btn-primary text-center">
-            Primary
-          </button>
+          {/* <Link to="/my-booking">
+            <button class="btn w-full rounded-full  btn-primary text-center">
+              Book Appointment Now
+            </button>
+          </Link> */}
+          <div onClick={handleBooking}>
+            <Button />
+          </div>
         </div>
       </div>
     </div>

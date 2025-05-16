@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Cards from "./Cards";
+import StatsChart from "./StatsChart";
 
 const DoctorsCard = ({ doctors }) => {
   const [displayDoctor, setDisplayDoctors] = useState([]);
@@ -39,6 +40,7 @@ const DoctorsCard = ({ doctors }) => {
           {showAll ? "Show Less " : "Show All Doctors"}
         </button>
       </div>
+      <StatsChart />
     </div>
   );
 };
