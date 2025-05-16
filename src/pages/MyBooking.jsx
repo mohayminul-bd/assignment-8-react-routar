@@ -2,8 +2,10 @@ import React, { useEffect, useState } from "react";
 import Cards from "../components/Cards";
 import { getBooking, removeDoctors } from "../utils/Doctor";
 import BookingCard from "../components/BookingCard";
-import PriceCrd from "../components/PriceCrd";
 import EmptyState from "../ui/EmptyState";
+
+import { ToastContainer, toast } from "react-toastify";
+import PriceCharts from "../components/PriceCharts";
 
 const MyBooking = () => {
   const [displayDoctor, setDisplayDoctors] = useState([]);
@@ -15,19 +17,16 @@ const MyBooking = () => {
   const handleDelete = (id) => {
     removeDoctors(id);
     setDisplayDoctors(getBooking);
+
+    toast.warn("Appointment booked Cancel");
   };
   if (displayDoctor.length < 1) return <EmptyState />;
 
   return (
     <div className=" pt-10 ">
-      <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-12 ">
-        {displayDoctor.map((doctor) => (
-          <PriceCrd
-            key={doctor.id}
-            doctor={doctor}
-            handleDelete={handleDelete}
-          />
-        ))}
+      {/* <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-12 "></div> */}
+      <div>
+        <PriceCharts displayDoctor={displayDoctor} />
       </div>
       <div className="text-center space-y-2 md:my-14 my-6">
         <h1 className="md:text-4xl text-2xl font-bold">
@@ -47,6 +46,8 @@ const MyBooking = () => {
               handleDelete={handleDelete}
             />
           ))}
+
+          <ToastContainer />
         </div>
       </div>
     </div>

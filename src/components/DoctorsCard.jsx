@@ -5,16 +5,7 @@ import StatsChart from "./StatsChart";
 const DoctorsCard = ({ doctors }) => {
   const [displayDoctor, setDisplayDoctors] = useState([]);
   const [showAll, setShowAll] = useState(false);
-  //
-  // const [showAll, setShowAll] = useState(false);
-  // useEffect(() => {
-  //   if (showAll) {
-  //     setDisplayPhones(phones);
-  //   } else {
-  //     setDisplayPhones(phones.slice(0, 6));
-  //   }
-  // }, [phones, showAll]);
-  //
+
   useEffect(() => {
     if (showAll) {
       setDisplayDoctors(doctors);
@@ -22,6 +13,7 @@ const DoctorsCard = ({ doctors }) => {
       setDisplayDoctors(doctors.slice(0, 6));
     }
   }, [doctors, showAll]);
+
   return (
     <div className=" pt-10 ">
       <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-12 ">

@@ -46,7 +46,7 @@ const Hero = ({ handleSearch }) => {
             </label>
             <button
               type="submit"
-              className="btn btn-info rounded-full md:ml-5 md:mt-0 mt-5 "
+              className="btn btn-info rounded-full md:ml-5 md:mt-0 mt-5 text-white"
             >
               Search Now
             </button>

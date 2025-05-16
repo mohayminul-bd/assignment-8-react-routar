@@ -4,6 +4,8 @@ import { PiTrademarkRegistered } from "react-icons/pi";
 import { HiOutlineExclamationCircle } from "react-icons/hi2";
 import Button from "../ui/Button";
 import { addBooking } from "../utils/Doctor";
+import { ToastContainer, toast } from "react-toastify";
+
 const DoctorDetails = () => {
   const data = useLoaderData();
   const { id } = useParams();
@@ -20,6 +22,7 @@ const DoctorDetails = () => {
 
   const handleBooking = () => {
     addBooking(singleDoctor);
+    toast.success(`Appointment booked with Dr. ${name}`);
   };
 
   return (
@@ -87,6 +90,7 @@ const DoctorDetails = () => {
           </Link> */}
           <div onClick={handleBooking}>
             <Button />
+            <ToastContainer />
           </div>
         </div>
       </div>

@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Hero from "../components/Hero";
 import { useLoaderData } from "react-router";
 import DoctorsCard from "../components/DoctorsCard";
+import Loader from "../components/Loader";
 
 const Home = () => {
   const data = useLoaderData();
@@ -14,6 +15,9 @@ const Home = () => {
     setDoctors(searchedDoctors);
   };
   console.log(data);
+  if (!doctors) {
+    return <Loader />;
+  }
   return (
     <div className="py-5">
       <Hero handleSearch={handleSearch} />

@@ -116,7 +116,7 @@ const Navbar = () => {
         </ul>
       </div>
       <div className="navbar-end">
-        <a className="btn">Emergency</a>
+        <a className="btn bg-blue-600 text-white rounded-full">Emergency</a>
       </div>
     </div>
   );
