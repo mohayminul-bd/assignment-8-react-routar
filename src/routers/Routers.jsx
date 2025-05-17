@@ -24,23 +24,27 @@ const router = createBrowserRouter([
       {
         path: "/my-booking",
         element: <MyBooking />,
+        HydrateFallback: Loader,
       },
       {
         path: "/blog",
         element: <Blogs />,
+        HydrateFallback: Loader,
       },
       {
         path: "/contact",
         element: <Contact />,
+        HydrateFallback: Loader,
       },
       {
         path: "/Emergency",
         element: <Emergency />,
+        HydrateFallback: Loader,
       },
       {
         path: "/doctor-details/:id",
         element: <DoctorDetails />,
-        hydrateFallbackElement: <p>Loading , please wait.....</p>,
+        HydrateFallback: Loader,
         loader: () => fetch("../drmain.json"),
       },
     ],
