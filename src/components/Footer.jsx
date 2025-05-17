@@ -1,4 +1,5 @@
 import React from "react";
+import { Link, NavLink } from "react-router";
 import img from "../assets/logo.png";
 
 const Footer = () => {
@@ -10,18 +11,30 @@ const Footer = () => {
           <h1 className="text-2xl font-bold">Phudu</h1>
         </div>
         <nav className="grid grid-flow-col gap-4">
-          <a href="/" className="link link-hover">
+          <NavLink
+            className={({ isActive }) => (isActive ? "text-indigo-500" : "")}
+            to="/"
+          >
             Home
-          </a>
-          <a href="/my-booking" className="link link-hover">
-            My Booking
-          </a>
-          <a href="/blog" className="link link-hover">
+          </NavLink>
+          <NavLink
+            className={({ isActive }) => (isActive ? "text-indigo-500" : "")}
+            to="/my-booking"
+          >
+            My-Booking
+          </NavLink>
+          <NavLink
+            className={({ isActive }) => (isActive ? "text-indigo-500" : "")}
+            to="/blog"
+          >
             Blogs
-          </a>
-          <a href="/contact" className="link link-hover">
-            Contact
-          </a>
+          </NavLink>
+          <NavLink
+            className={({ isActive }) => (isActive ? "text-indigo-500" : "")}
+            to="/contact"
+          >
+            Contact Us
+          </NavLink>
         </nav>
         <hr className=" border-t border-dashed border-gray-700" />
         <nav>

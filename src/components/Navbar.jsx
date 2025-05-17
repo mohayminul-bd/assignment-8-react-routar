@@ -120,7 +120,7 @@ const Navbar = () => {
           className={({ isActive }) => (isActive ? "text-indigo-500" : "")}
           to="/emergency"
         >
-          <a className="btn bg-blue-600 text-white rounded-full">Emergency</a>
+          <p className="btn bg-blue-600 text-white rounded-full">Emergency</p>
         </NavLink>
       </div>
     </div>
