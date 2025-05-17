@@ -9,6 +9,7 @@ import PriceCharts from "../components/PriceCharts";
 
 const MyBooking = () => {
   const [displayDoctor, setDisplayDoctors] = useState([]);
+  // console.log(displayDoctor);
   useEffect(() => {
     const saveDoctors = getBooking();
     setDisplayDoctors(saveDoctors);

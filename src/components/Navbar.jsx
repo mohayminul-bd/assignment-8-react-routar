@@ -116,7 +116,12 @@ const Navbar = () => {
         </ul>
       </div>
       <div className="navbar-end">
-        <a className="btn bg-blue-600 text-white rounded-full">Emergency</a>
+        <NavLink
+          className={({ isActive }) => (isActive ? "text-indigo-500" : "")}
+          to="/emergency"
+        >
+          <a className="btn bg-blue-600 text-white rounded-full">Emergency</a>
+        </NavLink>
       </div>
     </div>
   );

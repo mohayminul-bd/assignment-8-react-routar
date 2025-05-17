@@ -29,17 +29,6 @@ const TriangleBar = (props) => {
 // Custom colors for bars
 const colors = ["#0088FE", "#00C49F", "#FFBB28", "#FF8042", "red", "pink"];
 
-// Sample data
-// const data = [
-//   { name: "Page A", uv: 4000 },
-//   { name: "Page B", uv: 3000 },
-//   { name: "Page C", uv: 2000 },
-//   { name: "Page D", uv: 2780 },
-//   { name: "Page E", uv: 1890 },
-//   { name: "Page F", uv: 2390 },
-//   { name: "Page G", uv: 3490 },
-// ];
-
 const PriceCharts = ({ displayDoctor }) => {
   if (!displayDoctor || displayDoctor.length === 0) {
     return null;
@@ -47,7 +36,7 @@ const PriceCharts = ({ displayDoctor }) => {
 
   const chartData = displayDoctor.map((item, index) => ({
     name: item.name,
-    fee: parseInt(item.consultation_fee.slice(1)),
+    fee: item.consultation_fee,
     color: colors[index % colors.length],
   }));
 

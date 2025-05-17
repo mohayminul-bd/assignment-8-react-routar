@@ -7,6 +7,7 @@ import Contact from "../pages/Contact";
 import ErrorPage from "../pages/ErrorPage";
 import DoctorDetails from "../pages/DoctorDetails";
 import Loader from "../components/Loader";
+import Emergency from "../pages/Emergency";
 
 const router = createBrowserRouter([
   {
@@ -31,6 +32,10 @@ const router = createBrowserRouter([
       {
         path: "/contact",
         element: <Contact />,
+      },
+      {
+        path: "/Emergency",
+        element: <Emergency />,
       },
       {
         path: "/doctor-details/:id",

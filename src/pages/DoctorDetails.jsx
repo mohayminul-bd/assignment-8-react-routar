@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { useLoaderData, useParams } from "react-router";
 import { PiTrademarkRegistered } from "react-icons/pi";
 import { HiOutlineExclamationCircle } from "react-icons/hi2";
@@ -20,9 +20,16 @@ const DoctorDetails = () => {
     registration_number,
   } = singleDoctor || {};
 
+  const [clicked, setClicked] = useState(false);
+
   const handleBooking = () => {
     addBooking(singleDoctor);
-    toast.success(`Appointment booked with Dr. ${name}`);
+    if (!clicked) {
+      toast.success(`Appointment booked successfully ${name}`);
+      setClicked(true);
+    } else {
+      toast.error("You have already booked the appointment.");
+    }
   };
 
   return (
@@ -83,11 +90,6 @@ const DoctorDetails = () => {
           </span>
         </p>
         <div className="px-15">
-          {/* <Link to="/my-booking">
-            <button class="btn w-full rounded-full  btn-primary text-center">
-              Book Appointment Now
-            </button>
-          </Link> */}
           <div onClick={handleBooking}>
             <Button />
             <ToastContainer />

@@ -14,7 +14,7 @@ const Home = () => {
     );
     setDoctors(searchedDoctors);
   };
-  console.log(data);
+  // console.log(data);
   if (!doctors) {
     return <Loader />;
   }

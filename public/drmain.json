@@ -7,7 +7,7 @@
       {
         "degree": "MBBS FCPS (Medicine)",
         "institute": "Dhaka Medical College",
-        "year": "2009"
+        "year": 1500
       }
     ],
     "speciality": "Internal Medicine",
@@ -15,7 +15,7 @@
     "registration_number": "BMDC Reg No: A-12345",
     "details": "Expert in treating chronic conditions such as diabetes, hypertension, and respiratory diseases.",
     "availability": "Sun - Thu: 10am - 5pm",
-    "consultation_fee": "৳800"
+    "consultation_fee": 500
   },
   {
     "id": 2,
@@ -33,7 +33,7 @@
     "registration_number": "BMDC Reg No: B-23456",
     "details": "Performs a wide range of general surgeries with special focus on abdominal procedures.",
     "availability": "Sun - Wed: 9am - 3pm",
-    "consultation_fee": "৳1000"
+    "consultation_fee": 1000
   },
   {
     "id": 3,
@@ -51,7 +51,7 @@
     "registration_number": "BMDC Reg No: C-34567",
     "details": "Specializes in child healthcare, vaccinations, and growth development.",
     "availability": "Mon - Fri: 10am - 4pm",
-    "consultation_fee": "৳700"
+    "consultation_fee": 800
   },
   {
     "id": 4,
@@ -69,7 +69,7 @@
     "registration_number": "BMDC Reg No: D-45678",
     "details": "Experienced in managing pregnancy, fertility treatments, and women's health issues.",
     "availability": "Sat - Wed: 11am - 5pm",
-    "consultation_fee": "৳900"
+    "consultation_fee": 900
   },
   {
     "id": 5,
@@ -87,7 +87,7 @@
     "registration_number": "BMDC Reg No: E-56789",
     "details": "Treats heart diseases, arrhythmias, and performs non-invasive cardiac procedures.",
     "availability": "Sun - Thu: 10am - 2pm",
-    "consultation_fee": "৳1200"
+    "consultation_fee": 1300
   },
   {
     "id": 6,
@@ -105,7 +105,7 @@
     "registration_number": "BMDC Reg No: F-67890",
     "details": "Experienced in treating skin diseases, acne, eczema, and hair disorders.",
     "availability": "Tue - Sat: 11am - 6pm",
-    "consultation_fee": "৳600"
+    "consultation_fee": 700
   },
   {
     "id": 7,
@@ -123,7 +123,7 @@
     "registration_number": "BMDC Reg No: G-78901",
     "details": "Specialist in treating epilepsy, stroke, and neurodegenerative diseases.",
     "availability": "Sun - Wed: 9am - 3pm",
-    "consultation_fee": "৳1100"
+    "consultation_fee": 1000
   },
   {
     "id": 8,
@@ -141,7 +141,7 @@
     "registration_number": "BMDC Reg No: H-89012",
     "details": "Deals with kidney diseases, dialysis, and hypertension management.",
     "availability": "Mon - Thu: 10am - 1pm",
-    "consultation_fee": "৳950"
+    "consultation_fee": 800
   },
   {
     "id": 9,
@@ -159,7 +159,7 @@
     "registration_number": "BMDC Reg No: I-90123",
     "details": "Expert in treating ear, nose, and throat issues, and performs minor ENT surgeries.",
     "availability": "Sun - Wed: 10am - 4pm",
-    "consultation_fee": "৳800"
+    "consultation_fee": 1000
   },
   {
     "id": 10,
@@ -177,7 +177,7 @@
     "registration_number": "BMDC Reg No: J-01234",
     "details": "Skilled in joint replacement, fracture treatment, and spinal surgeries.",
     "availability": "Sat - Wed: 9am - 3pm",
-    "consultation_fee": "৳1100"
+    "consultation_fee": 1100
   },
   {
     "id": 11,
@@ -195,7 +195,7 @@
     "registration_number": "BMDC Reg No: K-12340",
     "details": "Provides mental health services, including anxiety, depression, and counseling.",
     "availability": "Sun - Thu: 11am - 5pm",
-    "consultation_fee": "৳850"
+    "consultation_fee": 800
   },
   {
     "id": 12,
@@ -213,6 +213,6 @@
     "registration_number": "BMDC Reg No: L-23456",
     "details": "Experienced in cancer diagnosis and treatment planning including chemotherapy.",
     "availability": "Mon - Thu: 10am - 2pm",
-    "consultation_fee": "৳1300"
+    "consultation_fee": 1300
   }
 ]
