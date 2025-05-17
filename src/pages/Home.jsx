@@ -9,12 +9,12 @@ const Home = () => {
   const [doctors, setDoctors] = useState(data);
   const handleSearch = (e, text) => {
     e.preventDefault();
+    if (text === "") return setDoctors(data);
     const searchedDoctors = data.filter((doctor) =>
       doctor.name.toLowerCase().split(" ").includes(text.toLowerCase())
     );
     setDoctors(searchedDoctors);
   };
-  // console.log(data);
   if (!doctors) {
     return <Loader />;
   }
